@@ -1,4 +1,4 @@
-var isNullOrUndefined = require("is_null_or_undefined");
+var isNull = require("is_null");
 
 
 module.exports = isObject;
@@ -6,5 +6,5 @@ module.exports = isObject;
 
 function isObject(value) {
     var type = typeof(value);
-    return type === "function" || (!isNullOrUndefined(value) && type === "object") || false;
+    return type === "function" || (!isNull(value) && type === "object") || false;
 }
