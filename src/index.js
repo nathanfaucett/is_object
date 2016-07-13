@@ -1,4 +1,4 @@
-var isNull = require("is_null");
+var isNull = require("@nathanfaucett/is_null");
 
 
 module.exports = isObject;
